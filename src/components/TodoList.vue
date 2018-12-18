@@ -11,7 +11,7 @@
     <section class="main" v-show="todos.length" v-cloak>
       <input class="toggle-all" type="checkbox" v-model="allDone">
       <ul class="todo-list">
-        <todo v-for="(todo, index) in filteredTodos"
+        <todo v-for="todo in filteredTodos"
           :key="todo.id"
           v-on:remove="removeTodo(todo)"
           v-on:check="updateTodo(todo, true)"
