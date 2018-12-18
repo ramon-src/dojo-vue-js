@@ -9,6 +9,7 @@ describe('TodoList', () => {
   });
 
   it('first test', () => {
-    expect(todoList.vm.newTodo).toBe('')
+    todoList.vm.newTodo = 'arroz'
+    expect(todoList.vm.newTodo).toBe('arroz')
   })
 })
